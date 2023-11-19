@@ -1,0 +1,115 @@
+/* rem = size of the document
+    em = size of the parent's document*/
+
+/*font upload */
+@font-face{font-family: Abel-Regular;
+    src: url(Font/Abel-Regular.ttf) format(opentype);
+}
+:root {
+    --clr-neon:hsl(317 100% 54%);
+    --clr-bg:hsl(323 21% 16%);
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*footer}*/
+footer{
+    color:var(--clr-neon);
+    background-color: #000000;
+}
+
+ul.social_icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+.media_container ul li a{
+    display: flex;
+    padding:20px;
+    width: 100%;
+    background-color:rgb(0, 0, 0);
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border:none;
+
+}
+.media_container ul li a:hover{
+    color:rgb(49, 11, 200);
+    }
+
+.neon_button{
+    color: var(--clr-neon);
+    font-size: 5 rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    place-items: center;
+    border: var(--clr-neon) 0.125em solid;
+    display: inline-block;
+    padding:0.25em 0.25em;
+    border-radius: 0.25em;
+    cursor: pointer;
+
+    text-shadow:0 0 0.125em hsl(0 0% .100% / 0.5)
+   ,0 0 0.45em currentColor;
+    
+    box-shadow: 0 0 0.5em 0 var (--clr-neon),;
+    box-shadow: inset 0 0 2em 0 var 
+    (--clr-neon), 0 0 0.em 0 var
+    (--clr-neon);
+    position: relative;
+ 
+
+}
+.neon_button::before{
+    pointer-events: none;
+    content:"";
+    position: absolute;
+    background: var(--clr-neon) ;
+    top:120%;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(10em) rotateX(40deg) scale(1, 0.55);
+    filter: blur(1em);
+    opacity: 9;
+}
+
+.neon_button::after{
+    content:"";
+    position: absolute;
+    background-color: var(--clr-neon);
+    top:0;
+    left:0;
+    right:0;
+    box-shadow: 0 0 5em 0.5em var (--clr-neon);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+
+.neon_button:hover,
+.neon_button:focus {
+    color: var (--clr-bg);
+    text-shadow: none;
+}
+
+.neon_button:hover::before,
+.neon-button:focus::before{
+    opacity: 1,
+}
+.neon_button:hover::after,
+.neon_button:focus::after{
+    opacity: 1;
+}
