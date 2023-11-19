@@ -423,12 +423,23 @@ img{
 	font-style: italic;
 	font-size: 18px;
 }
+
 .media {
     -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
     filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
     mix-blend-mode: multiply;
     width: 100%;
 }
+/*ARTWORKS*/
+.main_background.rectangle {
+    width: 150px;
+    height: 100px;
+    width: 50%;
+    margin: 10px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
 
 /*MEDIAQUERIES*/
 @media only all and (max-width: 2000px) {
