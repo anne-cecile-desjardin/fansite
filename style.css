@@ -79,20 +79,17 @@ h1{
     box-shadow:2px 2px 6px #888;  
     
 }
-.menu ul .home{
+#menu .menu ul .home{
     display: flex;
     flex-direction: row;
     align-items:center;
-    justify-content: flex-start;
+    justify-content:first baseline;
     box-sizing: border-box;
     padding: 0;
     width: 100px;
-
-    flex-direction: row;
-    align-items: center;
    
 }
-.menu ul li a{
+ .menu ul li a{
     float:left;
     text-decoration: none; /*Produces no line*/
     font-size: 30px;
