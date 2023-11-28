@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "Dev web/INTEGRATION - RESPONSIVE html-css-js/fansite"
+		},
+		{
+			"path": "wrapeffect"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "fansite"
+	}
+}

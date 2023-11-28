@@ -431,12 +431,13 @@ img{
     width: 100%;
 }
 /*ARTWORKS*/
-#main_background {
-    display:flex;
-    flex-wrap:wrap;
+.main_background.rectangle {
+    width: 150px;
     height: 100px;
     width: 50%;
-    margin: 10px
+    margin: 10px;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 
