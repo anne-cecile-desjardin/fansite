@@ -121,6 +121,47 @@ video {
     overflow-clip-margin: content-box;
     overflow: clip;
 }
+/*ARTWORKS*/
+
+.gallery {
+    max-width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.artwork {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Couleur de fond des œuvres d'art */
+}
+
+.artwork img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.artwork .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour la description */
+    color: white;
+    padding: 10px;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.artwork:hover .description {
+    opacity: 1;
+}
+
 /*event*/
 #Eurotour{
     font-size: 50px;
